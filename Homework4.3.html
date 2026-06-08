@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .form-group { margin-bottom: 15px; display: flex; flex-direction: column; width: 300px; }
+        .form-group.row { flex-direction: row; align-items: center; }
+        label { font-weight: bold; margin-bottom: 5px; }
+        .form-group.row label { margin-left: 8px; margin-bottom: 0; }
+        input { padding: 8px; font-size: 14px; }
+        button { padding: 10px; width: 300px; background-color: #007BFF; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+<center>
+    <h2>Create Your Account</h2>
+    <form action="#" method="POST">
+
+        <div class="form-group">
+            <label for="reg-name">First Name</label>
+            <input type="text" id="reg-name" name="firstname" placeholder="Enter your first name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="reg-lastname">Last Name</label>
+            <input type="text" id="reg-lastname" name="lastname" placeholder="Enter your last name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="reg-tel">Phone Number</label>
+            <input type="tel" id="reg-tel" name="tel" placeholder="+995 5xx xx xx xx" required>
+        </div>
+
+        <div class="form-group">
+            <label for="reg-password">Password</label>
+            <input type="password" id="reg-password" name="password" placeholder="Create a strong password" required>
+        </div>
+
+        <div class="form-group">
+            <label for="reg-email">Email Address</label>
+            <input type="email" id="reg-email" name="email" placeholder="firstnamelastname@gmail.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="reg-date">Date of Birth (Required)</label>
+            <input type="date" id="reg-date" name="date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="reg-image">Profile Image (Required)</label>
+            <input type="file" id="reg-image" name="image" accept="image/*" required>
+        </div>
+
+        <div class="form-group">
+            <label for="reg-range">Experience Level (0-10) (Required)</label>
+            <input type="range" id="reg-range" name="range" min="0" max="10" required>
+        </div>
+
+        <div class="form-group row">
+            <input type="checkbox" id="reg-checkbox" name="checkbox" required>
+            <label for="reg-checkbox">I agree to the terms and conditions</label>
+        </div>
+
+        <button type="submit">Submit Registration</button>
+
+    </form>
+</center>
+
+</body>
+</html>
