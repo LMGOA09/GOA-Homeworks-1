@@ -1,0 +1,75 @@
+<!--4)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .example-box {
+            border: 2px dashed #bdc3c7;
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #fafafa;
+        }
+
+        .parent-one {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .parent-two {
+            color: #e74c3c;
+        }
+
+        .parent-three {
+            text-align: center;
+        }
+
+        .parent-four {
+            font-size: 22px;
+        }
+
+        .parent-five {
+            font-style: italic;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Demonstrating CSS Inheritance</h1>
+    <p>The inner tags (child elements) are not styled directly. They inherit traits from their parent container classes.</p>
+
+    <div class="example-box parent-one">
+        <h3>1. Font Family Parent Container</h3>
+        <p>This paragraph automatically inherits the monospace font family from the parent div.</p>
+    </div>
+
+    <div class="example-box parent-two">
+        <h3>2. Color Parent Container</h3>
+        <p>This text is red because the color property propagates down to all children.</p>
+        <span>Even inline span tags inherit this red hue.</span>
+    </div>
+
+    <div class="example-box parent-three">
+        <h3>3. Text-Align Parent Container</h3>
+        <p>This entire text block is perfectly centered. The child tags obey the alignment rules set on the container layout.</p>
+    </div>
+
+    <div class="example-box parent-four">
+        <h3>4. Font-Size Parent Container</h3>
+        <p>This content scales up cleanly because it inherits the 22px base size explicitly declared on the parent selector.</p>
+    </div>
+
+    <div class="example-box parent-five">
+        <h3>5. Font-Style Parent Container</h3>
+        <p>This child text naturally assumes an italicized layout configuration from the container rule.</p>
+    </div>
+
+</body>
+</html>
