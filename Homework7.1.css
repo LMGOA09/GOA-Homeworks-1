@@ -1,0 +1,11 @@
+.dark-container {
+  background-color: #222222;
+  padding: 10px; 
+}
+
+.dark-container h2 {
+  text-align: center;
+  padding: 15px;
+  background-color: #ff0000;
+  color: #000000;
+}

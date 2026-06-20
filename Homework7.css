@@ -1,0 +1,17 @@
+.product-container {
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  width: 200px; 
+}
+
+.product-container p {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+}

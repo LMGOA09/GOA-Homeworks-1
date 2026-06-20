@@ -1,0 +1,13 @@
+.nav-container a {
+  display: inline-block; 
+  text-decoration: none;
+  padding: 10px 15px;
+  
+  border: 2px solid #555555;
+  margin: 10px;
+}
+
+.active {
+  color: #ffff00;
+  background-color: #000000;
+}
