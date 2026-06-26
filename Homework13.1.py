@@ -12,10 +12,9 @@ for value in car_profile.values():
     print(value)
 
 #6)
-# Adding a new key-value pair to the existing dictionary
 car_profile["screen_type"] = "Anti-glare Matte Screen"
+print(car_profile)
 
 #7)
-# Printing the key-value pairs in a clean, readable format
 for key, value in car_profile.items():
     print(f"{key}: {value}")
