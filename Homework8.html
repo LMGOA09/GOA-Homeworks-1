@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f7f6;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 3px solid #ddd;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      background-color: #3498db;
+      color: white;
+      transition: opacity 0.2s;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #2c3e50;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+      color: #16a085;
+      text-decoration-line: underline;
+      text-decoration-color: #e74c3c;
+    }
+
+    h3 {
+      color: #2980b9;
+      text-decoration-line: underline;
+      text-decoration-style: wavy;
+    }
+
+    .special-p {
+      text-decoration: underline overline dashed #8e44ad;
+      font-weight: bold;
+    }
+
+    .justify-p {
+      text-align: justify;
+    }
+
+    .right-p {
+      text-align: right;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <h1>Welcome to the CSS Styling Hub</h1>
+    <h2>Exploring Typography</h2>
+    <h3>A Deeper Dive Into Styles</h3>
+
+    <p class="justify-p"><strong>Paragraph 1:</strong> This is a justified paragraph explaining how core typography works. Web design heavily relies on readable alignment patterns to keep the viewer engaged. By organizing layout structures cleanly, your site instantly looks more professional.</p>
+    
+    <p><strong>Paragraph 2:</strong> This is a standard paragraph. Below you will find a curated collection of placeholders showcasing how easily we can embed images into structural grids using modern CSS Flexbox layout tools.</p>
+    
+    <p class="special-p"><strong>Paragraph 3:</strong> This paragraph showcases the advanced text-decoration shorthand property, utilizing lines above and below with a dashed style and purple coloration simultaneously.</p>
+    
+    <p><strong>Paragraph 4:</strong> Feel free to interact with the button layout at the bottom of the card. Each button represents an action a user can safely take when browsing a dashboard or layout.</p>
+    
+    <p class="right-p"><strong>Paragraph 5:</strong> — Alignment showcase: This entire note is explicitly right-aligned.</p>
+
+    <div class="gallery">
+      <img src="https://picsum.photos/150?random=1" alt="Random Visual 1">
+      <img src="https://picsum.photos/150?random=2" alt="Random Visual 2">
+      <img src="https://picsum.photos/150?random=3" alt="Random Visual 3">
+      <img src="https://picsum.photos/150?random=4" alt="Random Visual 4">
+      <img src="https://picsum.photos/150?random=5" alt="Random Visual 5">
+    </div>
+
+    <div class="actions">
+      <button>Like</button>
+      <button style="background-color: #2ecc71;">Share</button>
+      <button style="background-color: #e74c3c;">Delete</button>
+      <button style="background-color: #f39c12;">Bookmark</button>
+      <button style="background-color: #9b59b6;">Subscribe</button>
+    </div>
+
+  </div>
+
+</body>
+</html>

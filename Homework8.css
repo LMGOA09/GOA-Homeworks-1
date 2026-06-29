@@ -1,0 +1,110 @@
+/* ==========================================================================
+   1. text-align
+   Description: Sets the horizontal alignment of inline content (like text or 
+   images) inside its block-level parent element.
+   Values: left, right, center, justify
+   ========================================================================== */
+
+/*example 1:*/
+.main-title {
+  text-align: center;
+}
+
+/*example 2:*/
+.article-text {
+  text-align: justify;
+}
+
+
+/* ==========================================================================
+   2. text-decoration-line
+   Description: Sets the kind of decoration added to the text, such as an 
+   underline, overline, or line-through (strikethrough).
+   Values: none, underline, overline, line-through
+   ========================================================================== */
+
+/*example 1:*/
+.completed-task {
+  text-decoration-line: line-through;
+}
+
+/*example 2:*/
+.top-line-heading {
+  text-decoration-line: overline;
+}
+
+
+/* ==========================================================================
+   3. text-decoration-color
+   Description: Sets the color of the text decorations (underlines, overlines, etc.).
+   Values: Any valid CSS color (hex, rgb, hsl, named colors)
+   ========================================================================== */
+
+/*example 1:*/
+.vibrant-link {
+  text-decoration-line: underline;
+  text-decoration-color: #ff007f;
+}
+
+/*example 2:*/
+.subtle-footer-link {
+  text-decoration-line: underline;
+  text-decoration-color: #0000004d;
+}
+
+
+/* ==========================================================================
+   4. text-decoration-style
+   Description: Sets the style of the line used for the text decoration, 
+   allowing for decorative flair beyond a solid line.
+   Values: solid, double, dotted, dashed, wavy
+   ========================================================================== */
+
+/*example 1:*/
+.playful-text {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+/*example 2:*/
+.helper-text {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+}
+
+
+/* ==========================================================================
+   5. text-decoration
+   Description: A shorthand property that combines text-decoration-line, 
+   text-decoration-style, text-decoration-color, and text-decoration-thickness.
+   Syntax: [line] [style] [color]
+   ========================================================================== */
+
+/*example 1:*/
+.important-notice {
+  text-decoration: underline double #ff0000;
+}
+
+/*example 2:*/
+.clean-nav-link {
+  text-decoration: none;
+}
+
+
+/* ==========================================================================
+   6. text-shadow
+   Description: Adds a shadow effect to text. It takes multiple values: 
+   horizontal offset, vertical offset, blur radius, and shadow color.
+   Syntax: h-shadow v-shadow blur-radius color
+   ========================================================================== */
+
+/*example 1:*/
+.readable-hero-text {
+  text-shadow: 2px 2px 4px #00000080;
+}
+
+/*example 2:*/
+.neon-glow {
+  color: #ffffff;
+  text-shadow: 0 0 5px #ffffff, 0 0 15px #00ffcc, 0 0 25px #00ffcc;
+}
