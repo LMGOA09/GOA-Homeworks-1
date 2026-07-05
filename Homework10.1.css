@@ -1,0 +1,30 @@
+/*#3)*/
+.cricket-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+  font-family: sans-serif;
+}
+
+.cricket-table th {
+  background-color: #e2e2e2;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 12px;
+  text-align: left;
+  border: 1px solid #dcdcdc;
+}
+
+.cricket-table td {
+  padding: 10px 12px;
+  border: 1px solid #eef0f2;
+  color: #111;
+}
+
+.cricket-table tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.cricket-table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}

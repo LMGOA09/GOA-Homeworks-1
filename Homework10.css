@@ -1,0 +1,113 @@
+/*#2)*/
+/*:link*/
+a:link { 
+    color: #0066cc; 
+    text-decoration: none; 
+}
+
+footer a:link {
+    color: #cccccc; 
+}
+
+nav a:link { 
+    border-bottom: 2px solid transparent; 
+}
+
+.sidebar a:link { 
+    font-weight: bold; 
+}
+
+a.external:link { 
+    color: #1a8754; 
+}
+
+/*:visited*/
+.btn:hover { 
+    background-color: #0056b3; 
+    transition: 0.3s; 
+}
+
+a:hover { 
+    text-decoration: underline; 
+}
+
+.profile-card:hover { 
+    transform: scale(1.05); 
+}
+
+.gallery-item:hover .overlay { 
+    opacity: 1; 
+}
+
+.menu-item:hover { 
+    background-color: #e9ecef; 
+}
+
+/*:active*/
+.btn:active { 
+    transform: scale(0.98); 
+}
+
+.action-card:active { 
+    background-color: #333333; 
+}
+
+.shadow-btn:active { 
+    box-shadow: none; 
+}
+
+a:active { 
+    position: relative; 
+    top: 1px; 
+}
+
+input[type="text"]:active { 
+    border-color: #000000; 
+}
+
+/*:disabled*/
+button:disabled { 
+    background-color: #cccccc; 
+    cursor: not-allowed; 
+    opacity: 0.6; 
+}
+
+input:disabled { 
+    background-color: #e9ecef; 
+    color: #6c757d; 
+}
+
+select:disabled { 
+    border: 1px dashed #ced4da; 
+}
+
+input:disabled + label { 
+    text-decoration: line-through; 
+    color: #aaaaaa; 
+}
+
+textarea:disabled { 
+    resize: none; 
+    background: #f8f9fa; 
+}
+
+/*:nth-child*/
+li:nth-child(3) { 
+    color: #ff0000; 
+}
+
+tr:nth-child(even) { 
+    background-color: #f2f2f2; 
+}
+
+tr:nth-child(odd) { 
+    background-color: #ffffff; 
+}
+
+.grid-item:nth-child(3n+1) { 
+    border-left: 3px solid #0000ff; 
+}
+
+.list-item:nth-child(-n+3) { 
+    font-weight: bold; 
+}
