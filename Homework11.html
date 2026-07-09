@@ -1,0 +1,25 @@
+<!--#1)-->
+<!--The z-index property controls the stacking order of elements along the Z-axis (which behaves like 3D depth pointing 
+toward or away from your screen). It determines which element sits on top when they overlap.-->
+
+<!--z-index only works on elements that have a defined position property other than the default (static).
+It will work if the element has-->:
+<ul>
+    <li>position: absolute</li>
+    <li>position: relative</li>
+    <li>position: fixed</li>
+    <li>position: sticky</li>
+</ul>
+<!--It also works on direct child items of a Flexbox or Grid container, even if they are statically positioned.-->
+
+<!--#2)-->
+<!--The overflow property specifies what should happen to content that is too big to fit inside its parent element's formatting box-->.
+<!--Main Values-->:
+<ul>
+    <li>visible (Default): The content is not clipped and renders outside the element's box.</li>
+    <li>hidden: The content is clipped, and any content extending past the bounds of the box becomes invisible. No scrollbars are 
+        provided.</li>
+    <li>scroll: The content is clipped, but the browser always displays scrollbars (both horizontal and vertical), whether the content 
+        overflows or not.</li>
+    <li>auto: The smartest value—scrollbars are hidden by default and only appear if the content actually overflows the box.</li>
+</ul>

@@ -1,0 +1,11 @@
+/*5*/
+
+.red-box {
+  position: absolute;
+  z-index: 2; 
+}
+
+.blue-box {
+  position: absolute;
+  z-index: 1; 
+}
