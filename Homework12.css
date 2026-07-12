@@ -1,0 +1,72 @@
+body { font-family: sans-serif; padding: 20px; background: #f4f4f9; }
+    h2 { margin-top: 40px; color: #333; }
+    .block {
+      width: 100px;
+      height: 100px;
+      background: #3b82f6;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+    
+    /*objective 1:*/
+    .ob1-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      background: #e2e8f0;
+      padding: 20px;
+    }
+
+    /*objective 2:*/
+    .ob2-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      background: #e2e8f0;
+      padding: 20px;
+      min-height: 600px;
+    }
+
+    /*objective 3:*/
+    .ob3-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      width: 700px;
+      background: #e2e8f0;
+      padding: 20px;
+      margin: 0 auto;
+    }
+
+    /*objective 4:*/
+    .ob4-container {
+      display: flex;
+      justify-content: space-between; 
+      gap: 10px;
+      background: #e2e8f0;
+      padding: 20px;
+    }
+
+    /*objective 5:*/
+    .ob5-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      gap: 10px;
+      background: #e2e8f0;
+      padding: 20px;
+      height: 200px; 
+    }
+
+    .ob5-container.test-stretch .block { 
+      height: auto; 
+    } 
