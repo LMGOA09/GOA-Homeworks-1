@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">City<span>Transit</span></div>
+        <nav>
+            <ul>
+                <li><a href="Homework13(index).html">Home</a></li>
+                <li><a href="Homework13(about).html">About</a></li>
+                <li><a href="Homework13(register).html" class="active">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container page-content">
+        <section class="form-container">
+            <h2>Join the Hub</h2>
+            <p>Register today to get updates on transit routes, fleet additions, and local network changes.</p>
+            
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="interest">Primary Interest</label>
+                    <select id="interest" name="interest">
+                        <option value="buses">Bus Fleets & Routes</option>
+                        <option value="metro">Metro & Rail Networks</option>
+                        <option value="planning">Urban Infrastructure Planning</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a strong password" required>
+                </div>
+                
+                <button type="submit" class="btn btn-block">Create Account</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CityTransit Hub. All rights reserved. Built for transit enthusiasts.</p>
+    </footer>
+
+</body>
+</html>
