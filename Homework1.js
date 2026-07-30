@@ -27,7 +27,7 @@ let convertedNumber = parseInt("42", 10);
  * Why we need it: To ensure multiple conditions are met simultaneously 
    before executing code (e.g., checking if a user is logged in AND is an admin).
  
-   //Examples:
+   Examples:
     1. let result1 = true && true;  // Evaluates to: true
     2. let result2 = true && false; // Evaluates to: false
     3. let age = 20; hasID = true;
