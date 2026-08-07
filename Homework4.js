@@ -1,10 +1,10 @@
 //#1)
-for (let i = 1; i <= 15; i++) {
+for (let i = 1; i < 15; i++) {
   console.log(i);
 }
 
 //#2)
-for (let i = 20; i >= 1; i--) {
+for (let i = 20; i > 1; i--) {
   console.log(i);
 }
 
