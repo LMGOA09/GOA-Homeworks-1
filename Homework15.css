@@ -1,0 +1,48 @@
+/*objective 1:*/
+    .objective-1 {
+      width: 200px;
+      height: 200px;
+      padding: 20px;
+      border: 5px solid #0000ff;
+      margin: 30px;
+      background-color: #e0f7fa;
+    }
+
+    /*objective 2:*/
+    .objective-2-default {
+      width: 300px;
+      padding: 40px;
+      border: 10px solid #ff0000;
+      background-color: #ffebee;
+      margin-bottom: 20px;
+    }
+    .objective-2-border-box {
+      width: 300px;
+      padding: 40px;
+      border: 10px solid #ff0000;
+      background-color: #e8f5e9;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+
+    /*objective 3:*/
+    .o3-1 { width: 100px; height: 40px; margin: 10px; background: #ffcdd2; }
+    .o3-2 { width: 150px; height: 50px; margin: 30px; background: #e1bee7; }
+    .o3-3 { width: 200px; height: 60px; margin: 5px;  background: #c5cae9; }
+    .o3-4 { width: 250px; height: 70px; margin: 20px; background: #b2dfdb; }
+    .o3-5 { width: 300px; height: 80px; margin: 15px; background: #fff9c4; }
+
+    /*objective 4:*/
+    .parent {
+      width: 400px;
+      background-color: #f5f5f5;
+      border: 2px dashed #9e9e9e;
+      padding: 10px;
+    }
+    .child {
+      width: 100%;
+      padding: 20px;
+      border: 2px solid #000000;
+      box-sizing: border-box;
+      background-color: #ffe082;
+    }
