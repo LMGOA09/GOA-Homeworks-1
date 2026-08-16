@@ -1,0 +1,22 @@
+/* #1) */
+/* In CSS, the position property defines how an element is placed within the document layout. It dictates whether an element 
+follows the standard page flow or shifts independently, allowing precise placement using offset properties (top, right, bottom, 
+left) and layer stacking via z-index. */
+
+/* #2) */
+/* 
+1. static: The default position for all elements. Elements render sequentially according to the standard document flow. Offset 
+properties (top, right, bottom, left) and z-index have no effect.
+
+2. relative: Keeps the element within the normal document flow while allowing you to offset it relative to its original spot. 
+Surrounding elements still act as if the element is in its original position.
+
+3. absolute: Removes the element entirely from the document flow (leaving no empty space behind). It positions itself relative 
+to its nearest ancestor that has a non-static position (relative, absolute, fixed, or sticky). If no positioned ancestor 
+exists, it defaults to the main page body.
+
+4. fixed: Removes the element from the document flow and anchors it relative to the browser viewport. It remains locked in the 
+same screen position even when the page is scrolled.
+
+5. sticky: Combines relative and fixed behaviors. It acts like relative until the viewport scrolls past a defined offset threshold 
+(e.g., top: 0), at which point it locks into place like fixed within its parent element. */
