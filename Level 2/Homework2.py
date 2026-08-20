@@ -1,3 +1,4 @@
+#1)
 # creating the variables
 first_name="Luka"
 last_name="Motiashvili"

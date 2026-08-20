@@ -1,0 +1,25 @@
+/* #2) */
+.box-container {
+  font-size: 20px;
+}
+
+/* REM Sizing */
+.box-rem h2 { font-size: 2rem; }
+.box-rem p  { font-size: 1rem; }
+.box-rem span { font-size: 0.875rem; }
+
+/* EM Sizing: */
+.box-em h2 { font-size: 2em; }
+.box-em p  { font-size: 1em; }
+.box-em h2 span { font-size: 0.875em; }
+.box-em p span  { font-size: 0.875em; }
+
+/* REM vs. EM explanation: 
+1. REM (Root EM): Always references the standard `font-size` of the root <html> 
+   element (default 16px). Because it ignores parent element styles, dimensions 
+   remain stable and predictable regardless of depth in the DOM tree.
+
+2. EM: References the `font-size` of its immediate parent element. When elements 
+   are nested (e.g., a <span> inside an <h2>), the sizing compounds down the 
+   hierarchy. The <span> calculates its size based on the <h2>'s font size rather 
+   than the baseline root size. */

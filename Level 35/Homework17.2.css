@@ -1,0 +1,16 @@
+/* #3) */
+p { 
+  color: #ff0000; 
+}
+
+#main-content .text { 
+  color: #0000ff; 
+}
+
+.wrapper #special-text { 
+  color: #ffa500; 
+}
+
+div.wrapper p.highlight { 
+  color: #800080 !important; 
+}

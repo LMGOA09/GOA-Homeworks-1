@@ -1,3 +1,4 @@
+#1)
 # Fixed Code:
 name = "Saba"  # Error: Missing closing quotation mark (")
 age = 16       # Error: '!=' is a comparison; use '=' for assignment. Also removed quotes to keep it an integer.

@@ -1,3 +1,4 @@
+#2)
 # Fixed Code:
 # Added missing '(' after input and closing quote after the prompt
 number1 = int(input("Please enter first number: ")) 
