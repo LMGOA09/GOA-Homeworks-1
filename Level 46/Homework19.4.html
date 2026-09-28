@@ -1,0 +1,40 @@
+<!-- #5) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            width: 600px;
+            background-color: #bdc3c7;
+            gap: 10px;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #34495c;
+            color: #ffffff;
+        }
+
+        .items-2 {
+            flex-grow: 1;
+            background-color: #f1c40f;
+        }
+
+        /*What happens for <<flex-grow: 1>> is that middle box grows to take up all the
+          remaining extra space available inside the container, making it wider than the
+          other two boxes.*/
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box item-2">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>
