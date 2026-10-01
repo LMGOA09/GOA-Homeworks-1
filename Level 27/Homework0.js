@@ -15,9 +15,9 @@ let num2 = 381; //(SS1 - Zahesi!)
 console.log(num1 + num2)
 
 //#4)
-let num1 = 6;
-let num2 = 9
-console.log(num1 * num2);
+let num3 = 6;
+let num4 = 9
+console.log(num3 * num4);
 
 //#5)
 let car1 = "Iveco S-Way"
