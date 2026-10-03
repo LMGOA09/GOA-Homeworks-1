@@ -1,0 +1,35 @@
+<!-- #4) -->
+<!--შექმენი ბურთის div ბლოკის მარტივი ანიმაცია keyframes-ის დახმარებით სახელად Bounce: ბურთი 1 წამში 
+გადაადგილდეს ზემოთ100px-ით (transform: translateY()) და შემდეგ დაბრუნდეს ქვემოთ, ეს ანიმაცია უსასრულოდ 
+უნდა გაგრძელდეს-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes Bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            
+            50% {
+                transform: translateY(-100px);
+            }
+        }
+
+        .ball {
+            width: 40px;
+            height: 40px;
+            background: #ff0000;
+            border-radius: 50%;
+            animation: Bounce 1s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

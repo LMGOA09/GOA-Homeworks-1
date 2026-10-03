@@ -1,0 +1,47 @@
+<!-- #5) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes bounceAndRotate {
+            0% {
+                transform: translate(0, 0) rotate(0deg) scale(1);
+            }
+            25% {
+                transform: translate(0, -50px) rotate(0deg) scale(1);
+            }
+            50% {
+                transform: translate(100px, -50px) rotate(180deg) scale(1);
+            }
+            75% {
+                transform: translate(100px, -50px) rotate(180deg) scale(1.2);
+            }
+            100% {
+                transform: translate(200px, -100px) rotate(360deg) scale(0.5);
+            }
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            background: #007bff;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin-top: 120px;
+        }
+
+        .box:hover {
+            animation: bounceAndRotate 2s forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Hover me!!!</div>
+</body>
+</html>
