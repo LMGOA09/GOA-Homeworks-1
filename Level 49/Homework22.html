@@ -1,0 +1,70 @@
+<!-- #3) -->
+<!-- 
+display: flex: Best for 1D layouts (arranging items in a single row or single column). Great for navigation bars or aligning buttons.
+
+display: grid: Best for 2D layouts (arranging items in rows AND columns simultaneously). Perfect for page structures or card grids.
+
+display: flow-root: Creates a new Block Formatting Context (BFC). Its primary job is to safely contain floated child elements so parent
+backgrounds don't collapse. -->
+
+<!-- #4) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background: #111111;
+            color: #ffffff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #222222;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+            list-style: none;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+
+        .card {
+            background: #333333;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+  </style>
+</head>
+<body>
+    <nav>
+        <h2>Bistro</h2>
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>Menu</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <section class="menu-grid">
+        <div class="card">🍔 Burger - $10</div>
+        <div class="card">🍕 Pizza - $14</div>
+        <div class="card">🥗 Salad - $8</div>
+    </section>
+</body>
+</html>

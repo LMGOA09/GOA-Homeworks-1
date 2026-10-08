@@ -1,0 +1,74 @@
+<!-- #7) -->
+<!-- 
+The flex-direction property supports 4 values:
+
+1) row (Default: Left to Right)
+2) row-reverse (Right to Left)
+3) column (Top to Bottom)
+4) column-reverse (Bottom to Top) -->
+
+<!-- demo: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo-group {
+            margin-bottom: 1.5rem;
+            font-family: sans-serif;
+        }
+
+        .flex-container {
+            display: flex;
+            gap: 8px;
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        .item {
+            background: #4a90e2;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .row      { flex-direction: row; }
+        .row-rev  { flex-direction: row-reverse; }
+        .col      { flex-direction: column; }
+        .col-rev  { flex-direction: column-reverse; }
+    </style>
+</head>
+<body>
+    <div class="demo-group">
+        <h3>1. row (Default)</h3>
+        <div class="flex-container row">
+            <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+        </div>
+    </div>
+
+    <div class="demo-group">
+        <h3>2. row-reverse</h3>
+         <div class="flex-container row-rev">
+            <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+        </div>
+    </div>
+
+    <div class="demo-group">
+        <h3>3. column</h3>
+        <div class="flex-container col">
+            <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+        </div>
+    </div>
+
+    <div class="demo-group">
+        <h3>4. column-reverse</h3>
+        <div class="flex-container col-rev">
+            <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+        </div>
+    </div>
+</body>
+</html>
