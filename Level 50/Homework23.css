@@ -1,0 +1,17 @@
+/* #1) */
+/* @ media screen applies CSS rules specifically when the document is viewed on a digital screen (such as PC monitors,
+laptops, tablets and smartphones), this is the default behavior for most CSS rules. */
+
+/* @media print applies CSS rules only when the user attempts to print the webpage (e.g. Ctrl+P, Cmd+P or even Browser
+Menu -> Print), or views the browser's Print Preview. */
+/* #2) */
+
+/* @media (orientation: landscape): this media feature checks whether the viewport's width is greater than its height
+(landscape) or greater than its width (portrait). */
+
+/* demo: */
+@media (orientation: landscape) {
+    body {
+        background-color: #e0f7fa;
+    }
+}
