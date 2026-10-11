@@ -1,0 +1,45 @@
+<!-- #6) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .layout-container {
+            display: flex;
+            gap: 1rem;
+        }
+
+        /* for mobile phones: */
+        .sidebar, .main-content {
+            width: 100%;
+        }
+
+        .layout-container {
+            flex-direction: column;
+        }
+
+        /* for PC desktops: */
+        @media (min-width: 768px) {
+            .layout-container {
+                flex-direction: row;
+            }
+  
+            .sidebar {
+                width: 30%;
+            }
+  
+            .main-content {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout-container">
+        <div class="sidebar">Sidebar (30%)</div>
+        <div class="main-content">Main Content (70%)</div>
+    </div>
+</body>
+</html>

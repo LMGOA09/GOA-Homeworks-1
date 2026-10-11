@@ -1,0 +1,11 @@
+/* #7) */
+/* Yes, because CSS media queries support logical operators (like and, not, and comma-separated or) to combine multiple 
+   rules and target specific device states simultaneously! */
+
+/* demo: */
+@media (min-width: 768px) and (orientation: landscape) {
+    .hero-banner {
+        height: 80vh;
+        background-attachment: fixed;
+    }
+}
