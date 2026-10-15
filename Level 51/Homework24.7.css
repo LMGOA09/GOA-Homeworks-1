@@ -1,0 +1,27 @@
+body {
+    background-color: #242c54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 600px;
+    height: 350px;
+}
+
+.box { border-radius: 4px; }
+
+.green      { background-color: #61bb46; }
+.red        { background-color: #e03a3e; }
+.yellow     { background-color: #fdb827; }
+
+.tall-left  { grid-row: 1 / 4; }
+.wide-top   { grid-column: 2 / 4; }
+.tall-right { grid-row: 2 / 4; }
