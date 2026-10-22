@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Homework25.css">
+</head>
+<body>
+    <!-- Objective 1: -->
+    <section>
+        <h2>1. Cards Section</h2>
+        <div class="card-container">
+            <div class="card">
+            <h3>Card One</h3>
+            <p>Uses <code>--card-width</code>, <code>--card-padding</code>, and <code>--card-shadow</code>.</p>
+            <button class="btn">Click Me</button>
+        </div>
+        <div class="card">
+            <h3>Card Two</h3>
+            <p>Uses <code>--card-width</code>, <code>--card-padding</code>, and <code>--card-shadow</code>.</p>
+            <button class="btn">Click Me</button>
+        </div>
+        <div class="card">
+            <h3>Card Three</h3>
+            <p>Uses <code>--card-width</code>, <code>--card-padding</code>, and <code>--card-shadow</code>.</p>
+            <button class="btn">Click Me</button>
+        </div>
+    </section>
+
+    <!-- Objective 2: -->
+    <section>
+        <h2>2. Responsive Typography & UI Demo</h2>
+        <p>This text block uses <code>--font-size-title</code> and <code>--font-size-body</code> variables. Resize your 
+        browser window (or view on mobile) to see the font sizes automatically scale down through a single media query 
+        override in <code>:root</code>!</p>
+    </section>
+
+    <!-- Objective 3: -->
+    <section>
+        <h2>3. Button with CSS Variables</h2>
+        <p>This button uses <code>--btn-bg</code>, <code>--btn-color</code>, <code>--btn-radius</code>, and updates smoothly 
+        on hover using <code>--btn-hover-bg</code>:</p>
+    
+        <button class="btn">Click Me</button>
+    </section>
+
+    <!-- Objective 5: -->
+    <section>
+        <h2>5. Mask Image Effect</h2>
+        <p>Left side is transparent, right side is opaque (using <code>-webkit-mask-image: var(--mask-gradient)</code>):</p>
+        <img class="masked-image" src="otokar-centro.jpg" alt="Masked Example" />
+    </section>
+
+    <!-- Objective 6 (example): -->
+    <section>
+        <h2>6. Object-Fit Example</h2>
+        <p>Images cropped neatly into square containers without distortion:</p>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="otokar-centro.jpg" alt="Sample 1" />
+            </div>
+            <div class="gallery-item">
+                <img src="otokar-centro.jpg" alt="Sample 2" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Objective 7: -->
+    <section>
+        <h2>7. Space-Between vs Space-Evenly Animation</h2>
+        <p>This box animates between <code>space-between</code> (items touch edges) and <code>space-evenly</code> 
+        (equal spacing around items):</p>
+            <div class="flex-demo-container">
+                <div class="flex-box">1</div>
+                <div class="flex-box">2</div>
+                <div class="flex-box">3</div>
+            </div>
+    </section>
+</body>
+</html>
+
+<!-- Objective 6: -->
+<!-- 
+Images online come in all kinds of different sizes and shapes (some are super wide, some are tall). When you force an 
+image to fit into a specific box on your website (like a fixed square profile picture), standard HTML normally stretches, 
+squishes, or distorts the image.
+
+Using object-fit: cover tells the browser: “Fill this entire box with the image, keep its original aspect ratio so it doesn't 
+look weirdly stretched, and just crop out whatever doesn't fit.” -->

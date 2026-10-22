@@ -1,0 +1,30 @@
+/* #4) */
+/* 
+How they function: CSS variables (custom properties) store values centrally. When you put them inside a media query (@media) targeting
+the :root selector, you are changing the definition of the variable when the screen size changes. Because elements reference 
+the variable rather than a fixed number, they update automatically. */
+
+/* 
+Why is it beneficial for the modifications:
+
+1. Writing less code (DRY Principle): Instead of rewriting dozens of font sizes or margins inside media queries for every single class, 
+we only change a couple of variables in :root;
+2. Global control: One change at the top scales our entire app or website instantly;
+3. Easy Maintenance: If you want to change your mobile font sizes later, you only edit one line in :root instead of hunting through your  
+stylesheet. */
+
+/* Objective 4 example:  */
+:root {
+    --main-padding: 30px;
+}
+
+/* When screen gets smaller than 600px, update the variable */
+@media (max-width: 600px) {
+    :root {
+        --main-padding: 10px;
+    }
+}
+
+/* The elements automatically use the updated variable value */
+.box { padding: var(--main-padding); }
+.card { padding: var(--main-padding); }
