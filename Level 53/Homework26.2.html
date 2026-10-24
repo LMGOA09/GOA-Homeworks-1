@@ -1,0 +1,32 @@
+<!-- #9) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .floating-card {
+            width: 150px;
+            height: 100px;
+            background-color: #87ceeb;
+            animation: floatEffect 3s ease-in-out infinite;
+        }
+
+        @keyframes floatEffect {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-card">Floating Card</div>
+</body>
+</html>
