@@ -1,11 +1,16 @@
 #1)
 def sum_all(*args): # Reminder: accepts any number of normal values (like 316, 337, 381...); also groups values into a Tuple.
-    return sum(*args)
+    return sum(args)
+
+print(sum_all(316, 337, 381))
+    
 
 #2)
 def print_student_info(**kwargs): # Reminder: accepts named values (like name="Qaikhosro", age=30); also groups values into a Dictionary.
     for key, value in kwargs.items():
         print(f"{key.capitalize()}: {value}")
+
+print_student_info(name="Qaikhosro", age=30)
 
 #3)
 try:
