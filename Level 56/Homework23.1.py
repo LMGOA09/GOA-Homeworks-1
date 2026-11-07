@@ -1,16 +1,3 @@
-#15)
-emails = [
-    "grigolkhandzteli81@gmail.com",
-    "egnateninoshvili44@yahoo.com",
-    "arnoldchiqobava27gmail.com",
-    "simonkandelaki53@gmail.com",
-    "petreqavtaradze70@outlook.com",
-    "akakitsereteli77@gmail"
-]
-
-valid_emails = list(filter(lambda e: "@" in e and e.endswith(".com"), emails))
-print(valid_emails)
-
 #9)
 numbers = [306, 314, 326, 337, 346, 351, 364, 370, 381, 392]
 
@@ -66,3 +53,36 @@ numbers = [121, 144, 169, 200, 225, 256, 300, 324]
 
 result = list(filter(lambda n: (n ** 0.5).is_integer(), numbers))
 print(result)
+
+#15)
+emails = [
+    "grigolkhandzteli81@gmail.com",
+    "egnateninoshvili44@yahoo.com",
+    "arnoldchiqobava27gmail.com",
+    "simonkandelaki53@gmail.com",
+    "petreqavtaradze70@outlook.com",
+    "akakitsereteli77@gmail"
+]
+
+valid_emails = list(filter(lambda e: "@" in e and e.endswith(".com"), emails))
+print(valid_emails)
+
+#16)
+books = [
+    {"title": "Python Basics", "pages": 120, "available": True},
+    {"title": "JavaScript", "pages": 350, "available": False},
+    {"title": "HTML Guide", "pages": 80, "available": True},
+    {"title": "Advanced Python", "pages": 500, "available": True}
+]
+
+result = list(filter(lambda b: b["available"] and b["pages"] > 100, books))
+print(result)
+
+#17)
+employees = ["Leo_Kvachadze", "Levan_Rcheulishvili", "Elguja_Amashukeli", "Mukhran_Machavariani"]
+salaries = [1500, 2000, 1800, 2500]
+bonuses = [200, 300, 150, 500]
+
+for name, salary, bonus in zip(employees, salaries, bonuses):
+    final_salary = salary + bonus
+    print(f"{name}: {final_salary}")
