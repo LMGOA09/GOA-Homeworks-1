@@ -16,15 +16,15 @@ prog_students = ["Valentin_Topuridze", "Vaso_Godziashvili", "Romanoz_Khomleli", 
 javascript = [90, 75, 85, 60]
 python = [85, 95, 70, 80]
 
-for student, m_score, p_score in zip(prog_students, javascript, python):
-    avg = (m_score + p_score) / 2
+for student, j_score, p_score in zip(prog_students, javascript, python):
+    avg = (j_score + p_score) / 2
     print(f"{student}'s average score: {avg}")
 
 #20)
 team_a = [85, 90, 75, 100, 65]
 team_b = [80, 95, 70, 90, 85]
 
-for i, (score_a, score_b) in zip(team_a, team_b):
+for i, (score_a, score_b) in enumerate(zip(team_a, team_b)):
     if score_a > score_b:
         print(f"Round {i}: Team A wins")
     elif score_b > score_a:

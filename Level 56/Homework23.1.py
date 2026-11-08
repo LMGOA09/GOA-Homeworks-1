@@ -61,7 +61,7 @@ emails = [
     "arnoldchiqobava27gmail.com",
     "simonkandelaki53@gmail.com",
     "petreqavtaradze70@outlook.com",
-    "akakitsereteli77@gmail"
+    "akakitsereteli77@gmail.com"
 ]
 
 valid_emails = list(filter(lambda e: "@" in e and e.endswith(".com"), emails))
