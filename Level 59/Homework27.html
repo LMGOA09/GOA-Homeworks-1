@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Homework27.css">
+</head>
+<body>
+    <!-- Objective 1: My Favorite Movie -->
+    <section>
+        <h2>1. My Favorite Movie</h2>
+        <details>
+            <summary>About the Movie</summary>
+            <p><strong>Hot Dog</strong> Is a Qartvelian crime-drama/noir serial directed by Zaza Urushadze and Otar Shamatava, spanning 5 seasons; features protagonists Bidzina Tabagari, Leqso Nizharadze, Geno Shavdia, Rezo Qatamadze, Givi Intskirveli, Dilar Tchkadua,
+            Lado Jibuti and more. The Big Five are on the verge of fighting crime, investigating situations, facing political antagonists like Ucha Zeragia and Soso Egadze, taking criminal masterminds like Vano Gejadze, Guram Jinoria, Jimsher Philphani, "Kolduna", 
+            "Trezora" and others to justice, surviving the corrupted Ministry and the law system in the beginning of the 21st Century.</p>
+        </details>
+    </section>
+
+    <!-- Objective 2: Contenteditable -->
+    <section>
+        <h2>2. Contenteditable</h2>
+        <!-- 
+            The contenteditable attribute makes an element's content editable by the user directly in the browser, works by the principle of a feedback valley in content report pages, rating pages and more. 
+        -->
+        <p contenteditable="true">Click inside this text and try editing it right here in your browser!</p>
+    </section>
+
+    <!-- Objective 3: Drawbacks of contenteditable -->
+    <section>
+        <h2>3. Drawbacks of contenteditable</h2>
+        <!-- 
+            Drawback: Changes made by the user are only temporary and are lost when the page is refreshed because there is no server-side persistence.
+            Resolution: This can be resolved by listening to input events via JavaScript (e.g., using 'input' or 'blur') and saving the modified content to localStorage or sending it to a backend database via an API.
+        -->
+        <div contenteditable="true" style="padding: 10px; border: 1px dashed #666666;">
+            Edit this box. Changes won't persist on reload unless saved via JavaScript.
+        </div>
+    </section>
+
+    <!-- Objective 4: CSS :has() -->
+    <section>
+        <h2>4. CSS :has()</h2>
+        <div class="objective-4-container" style="padding: 10px; border: 1px solid #cccccc;">
+            <p>Click or focus the input below to change this container's background color:</p>
+            <input type="text" placeholder="Focus me...">
+        </div>
+    </section>
+
+    <!-- Objective 5: The inert Attribute -->
+    <section>
+        <h2>5. The inert Attribute</h2>
+        <div>
+            <h3>Active Div</h3>
+            <p>This is a normal, interactive section.</p>
+            <button onclick="alert('Clicked!')">Click Me</button>
+        </div>
+        <hr style="margin: 15px 0;">
+        <div inert>
+            <h3>Inert Div</h3>
+            <p>This section has the inert attribute. It cannot be interacted with, clicked, or focused.</p>
+            <button onclick="alert('Clicked!')">Can't Click Me</button>
+        </div>
+    </section>
+
+    <!-- Objective 6: Placeholder -->
+    <section>
+        <h2>6. Placeholder</h2>
+        <form>
+            <input type="text" placeholder="Enter your first name">
+            <input type="text" placeholder="Enter your last name">
+            <input type="email" placeholder="Enter your email address">
+        </form>
+    </section>
+
+    <!-- Objective 7: Required and Disabled -->
+    <section>
+        <h2>7. Required and Disabled</h2>
+        <form>
+            <!-- 
+                Required: The user must fill out this field before the form can be successfully submitted.
+                Disabled: This field is uneditable, greyed out, and its value is ignored/not submitted with the form.
+            -->
+            <input type="text" required placeholder="Required field">
+            <input type="text" disabled value="Disabled field">
+        </form>
+    </section>
+
+    <!-- Objective 8: Details and Summary – FAQ -->
+    <section>
+        <h2>8. Details and Summary – FAQ</h2>
+        <details>
+            <summary>What is HTML?</summary>
+            <p>HTML stands for HyperText Markup Language, used to structure web pages.</p>
+        </details>
+        <details>
+            <summary>What is CSS?</summary>
+            <p>CSS stands for Cascading Style Sheets, used to style and layout web pages.</p>
+        </details>
+        <details>
+            <summary>What is JavaScript?</summary>
+            <p>JavaScript is a programming language that adds interactivity and dynamic behavior to websites.</p>
+        </details>
+    </section>
+
+    <!-- Objective 9: CSS :has() and Multiple Inputs -->
+    <section>
+        <h2>9. CSS :has() and Multiple Inputs</h2>
+        <form>
+            <p>Focus either input below to change the form's background:</p>
+            <input type="text" placeholder="Input One">
+            <input type="text" placeholder="Input Two">
+        </form>
+    </section>
+</body>
+</html>
+
